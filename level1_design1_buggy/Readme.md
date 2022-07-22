@@ -99,7 +99,7 @@ For the adder design, the logic should be ```5'b01100: out = inp12; ```instead o
 
 ## Design Fix
 Updating the design and re-running the test makes the test pass.
-
+![1](https://user-images.githubusercontent.com/59868949/180506416-3bfd448c-f222-4e5d-a554-cb1f702675b2.png)
 The updated design is checked in as adder_fix.v
 
 
