@@ -88,7 +88,7 @@ async def test_mux(dut):
 
        await Timer(2, units='ns')
         
-       
+       dut._log.info(f'b={b:02} model={b:02} DUT={int(dut.out.value):02}')
        assert dut.out.value == b, "MUX result is incorrect:  {b} != {OUT}, expected value={EXP}".format(
           b=I[d],OUT=int(dut.out.value), EXP=I[d])
   
