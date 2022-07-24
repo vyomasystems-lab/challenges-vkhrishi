@@ -74,26 +74,32 @@ The values are assigned to the input port using
        dut.inp29.value = I29
        dut.inp30.value = I30
 ```       
-When``` s=0b01100
-        s=0b01101
-        s=0b11110
+When``` s=0b01100,
+        s=0b01101,
+        s=0b11110,
         dut.sel.value=s```        
        
 The assert statement is used for comparing the Multiplexer's output to the expected value.
 
 The following error is seen:
 
+
+
+
 Error 1 when s=0b01100
 ```       
-assert dut.out.value == b, "MUX result is incorrect:  {b} != {OUT}, expected value={EXP}".format(AssertionError: MUX result is incorrect:  3 != 0, expected value=3
+assert dut.out.value == b, "MUX result is incorrect:  {b} != {OUT}, expected value={EXP}".format(
+AssertionError: MUX result is incorrect:  3 != 0, expected value=3
 ```
 Error 2 when s=0b01101
 ```
-assert dut.out.value == b, "MUX result is incorrect:  {b} != {OUT}, expected value={EXP}".format(AssertionError: MUX result is incorrect:  2 != 3, expected value=2
+assert dut.out.value == b, "MUX result is incorrect:  {b} != {OUT}, expected value={EXP}".format(
+AssertionError: MUX result is incorrect:  2 != 3, expected value=2
 ``` 
 Error 3 when s=0b11110
 ```
-assert dut.out.value == b, "MUX result is incorrect:  {b} != {OUT}, expected value={EXP}".format( AssertionError: MUX result is incorrect:  2 != 0, expected value=2
+assert dut.out.value == b, "MUX result is incorrect:  {b} != {OUT}, expected value={EXP}".format(
+AssertionError: MUX result is incorrect:  2 != 0, expected value=2
 ```
                      
 ## Test Scenario  (Important)
@@ -116,7 +122,7 @@ Output mismatches for the above inputs proving that there is a design bug
 Based on the above test input and analysing the design, we see the following
 ```
 5'b01011: out = inp11;
-5'b01101: out = inp12;  ===> BUG
+5'b01101: out = inp12;  ===> BUG at inp12 and inp13
 5'b01101: out = inp13;  
 .
 .
