@@ -83,8 +83,7 @@ The assert statement is used for comparing the Multiplexer's output to the expec
 
 The following error is seen:
 
-
-
+![2](https://user-images.githubusercontent.com/59868949/180653622-def72a01-cd7f-4dec-9793-fa2782c38c89.png)
 
 Error 1 when s=0b01100
 ```       
@@ -139,7 +138,8 @@ For the Multiplexer design, the logic should be ```5'b01100: out = inp12; ```ins
 ## Design Fix
 Updating the design and re-running the test makes the test pass.
 
-![1](https://user-images.githubusercontent.com/59868949/180506416-3bfd448c-f222-4e5d-a554-cb1f702675b2.png)
+
+![3](https://user-images.githubusercontent.com/59868949/180653626-ba12fba5-8903-4bb0-be6f-6d5b0219c1cb.png)
 
 The updated design is checked in level1_design1_fix
 
