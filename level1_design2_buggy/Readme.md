@@ -102,21 +102,93 @@ Based on the above test input and analysing the design, we see the following
 SEQ_1:
       begin
         if(inp_bit == 1)
-          next_state = IDLE;  ===>BUG 
+          next_state = IDLE;  ===>BUG1 
         else
           next_state = SEQ_10;
       end
+      
+SEQ_101:
+      begin
+        if(inp_bit == 1)
+          next_state = SEQ_1011;
+        else
+          next_state = IDLE;  ===>BUG2
+      end    
+          
+SEQ_1011:
+      begin
+        next_state = IDLE; ===>BUG3
+      end          
+          
+      
 
 ```
-For the Multiplexer design, the logic should be ```5'b01100: out = inp12; ```instead of ``` 5'b01101: out = inp12;```as in the design code.
+For the Sequence Detector design, the logic should at SEQ_1 , SEQ101 , SEQ1011 should be 
 
-```5'b11110: out = inp30;``` is missing in this logic.
+```
+
+SEQ_1:
+      begin
+        if(inp_bit == 1)
+          next_state = SEQ_1;
+        else
+          next_state = SEQ_10;
+      end 
+      
+SEQ_101:
+      begin
+        if(inp_bit == 1)
+          next_state = SEQ_1011;
+        else
+          next_state = SEQ_10;
+      end
+      
+SEQ_1011:
+      begin
+        if(inp_bit == 1)
+          next_state = SEQ_1;
+        else
+          next_state = SEQ_10;
+      end
+      
+```
+      
+instead of
+
+```
+SEQ_1:
+      begin
+        if(inp_bit == 1)
+          next_state = IDLE;  ===>BUG1 
+        else
+          next_state = SEQ_10;
+      end
+      
+SEQ_101:
+      begin
+        if(inp_bit == 1)
+          next_state = SEQ_1011;
+        else
+          next_state = IDLE;  ===>BUG2
+      end    
+          
+SEQ_1011:
+      begin
+        next_state = IDLE; ===>BUG3
+      end     
+      
+```
+
+as in the design code.
+
+
 
 ## Design Fix
 Updating the design and re-running the test makes the test pass.
 
+![6](https://user-images.githubusercontent.com/59868949/181188504-8ee2a1fb-89bd-48ff-a5b6-e1c5e1ca5fd7.png)
 
-![3](https://user-images.githubusercontent.com/59868949/180653626-ba12fba5-8903-4bb0-be6f-6d5b0219c1cb.png)
 
-The updated design is checked in level1_design1_fix
+
+The updated design is checked in level1_design2_fix
 
