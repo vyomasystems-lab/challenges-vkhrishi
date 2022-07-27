@@ -34,9 +34,9 @@ def run_test_ANDN_1(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x401070B3
 
     # expected output from the model
@@ -74,9 +74,9 @@ def run_test_ORN_2(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x401060B3
 
     # expected output from the model
@@ -114,9 +114,9 @@ def run_test_XNOR_3(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x401040B3
 
     # expected output from the model
@@ -154,9 +154,9 @@ def run_test_SLO_4(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x201010B3
 
     # expected output from the model
@@ -194,9 +194,9 @@ def run_test_SRO_5(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x201050B3
 
     # expected output from the model
@@ -234,9 +234,9 @@ def run_test_ROL_6(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x601010B3
 
     # expected output from the model
@@ -274,9 +274,9 @@ def run_test_ROR_7(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x601050B3
 
     # expected output from the model
@@ -314,9 +314,9 @@ def run_test_SH1ADD_8(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x201020B3
 
     # expected output from the model
@@ -354,9 +354,9 @@ def run_test_SH2ADD_9(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x201040B3
 
     # expected output from the model
@@ -394,9 +394,9 @@ def run_test_SH3ADD_10(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x201060B3
 
     # expected output from the model
@@ -434,9 +434,9 @@ def run_test_SBCLR_11(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x481010B3
 
     # expected output from the model
@@ -474,9 +474,9 @@ def run_test_SBSET_12(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x281010B3
 
     # expected output from the model
@@ -514,9 +514,9 @@ def run_test_SBINV_13(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x681010B3
 
     # expected output from the model
@@ -554,9 +554,9 @@ def run_test_SBEXT_14(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x481050B3
 
     # expected output from the model
@@ -594,9 +594,9 @@ def run_test_GORC_15(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x281050B3
 
     # expected output from the model
@@ -634,9 +634,9 @@ def run_test_GREV_16(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x681050B3
 
     # expected output from the model
@@ -674,9 +674,9 @@ def run_test_CMIX_17(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x461010B3
 
     # expected output from the model
@@ -714,9 +714,9 @@ def run_test_CMOV_18(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x461050B3
 
     # expected output from the model
@@ -754,9 +754,9 @@ def run_test_FSL_19(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x441010B3
 
     # expected output from the model
@@ -794,9 +794,9 @@ def run_test_FSR_20(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x441050B3
 
     # expected output from the model
@@ -834,9 +834,9 @@ def run_test_CLZ_21(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x60001093
 
     # expected output from the model
@@ -875,9 +875,9 @@ def run_test_CTZ_22(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 =random.randint(0,4294967295)
     mav_putvalue_instr = 0x60101093
 
     # expected output from the model
@@ -915,9 +915,9 @@ def run_test_PCNT_23(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x60201093
 
     # expected output from the model
@@ -955,9 +955,9 @@ def run_test_SEXTB_24(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x60401093
 
     # expected output from the model
@@ -996,9 +996,9 @@ def run_test_SEXTH_25(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x60501093
 
     # expected output from the model
@@ -1036,9 +1036,9 @@ def run_test_CRC32B_26(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 =random.randint(0,4294967295)
     mav_putvalue_instr = 0x61001093
 
     # expected output from the model
@@ -1076,9 +1076,9 @@ def run_test_CRC32H_27(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 =random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x61101093
 
     # expected output from the model
@@ -1116,9 +1116,9 @@ def run_test_CRC32W_28(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x61201093
 
     # expected output from the model
@@ -1156,9 +1156,9 @@ def run_test_CRC32CB_29(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x61801093
 
     # expected output from the model
@@ -1196,9 +1196,9 @@ def run_test_CRC32CH_30(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x61901093
 
     # expected output from the model
@@ -1236,9 +1236,9 @@ def run_test_CRC32CW_31(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x61A01093
 
     # expected output from the model
@@ -1276,9 +1276,9 @@ def run_test_CLMUL_32(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x0A1010B3
 
     # expected output from the model
@@ -1316,9 +1316,9 @@ def run_test_CLMULH_33(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x0A1030B3
 
     # expected output from the model
@@ -1356,9 +1356,9 @@ def run_test_CLMULR_34(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x0A1020B3
 
     # expected output from the model
@@ -1396,9 +1396,9 @@ def run_test_MIN_35(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x0A1040B3
 
     # expected output from the model
@@ -1436,9 +1436,9 @@ def run_test_MAX_36(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x0A1050B3
 
     # expected output from the model
@@ -1476,9 +1476,9 @@ def run_test_MINU_37(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x0A1060B3
 
     # expected output from the model
@@ -1517,9 +1517,9 @@ def run_test_MAXU_38(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x0A1070B3
 
     # expected output from the model
@@ -1557,9 +1557,9 @@ def run_test_BDEP_39(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x481060B3
 
     # expected output from the model
@@ -1597,9 +1597,9 @@ def run_test_BEXT_40(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x081060B3
 
     # expected output from the model
@@ -1637,9 +1637,9 @@ def run_test_PACK_41(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x081060B3
 
     # expected output from the model
@@ -1677,9 +1677,9 @@ def run_test_PACKU_42(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x481040B3
 
     # expected output from the model
@@ -1717,9 +1717,9 @@ def run_test_PACKH_45(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x081070B3
 
     # expected output from the model
@@ -1757,9 +1757,9 @@ def run_test_SLOI_46(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x20101093
 
     # expected output from the model
@@ -1797,9 +1797,9 @@ def run_test_SROI_47(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x20005093
 
     # expected output from the model
@@ -1837,9 +1837,9 @@ def run_test_RORI_48(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x60005093
 
     # expected output from the model
@@ -1877,9 +1877,9 @@ def run_test_SBCLRI_49(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x48101093
 
     # expected output from the model
@@ -1917,9 +1917,9 @@ def run_test_SBSETI_50(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x28101093
 
     # expected output from the model
@@ -1958,9 +1958,9 @@ def run_test_SBINVI_51(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x68101093
 
     # expected output from the model
@@ -1998,9 +1998,9 @@ def run_test_SBEXIT_52(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x48105093
 
     # expected output from the model
@@ -2038,9 +2038,9 @@ def run_test_SHFL_53(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x081010B3
 
     # expected output from the model
@@ -2079,9 +2079,9 @@ def run_test_UNSHFL_54(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x081050B3
 
     # expected output from the model
@@ -2119,9 +2119,9 @@ def run_test_SHFLI_55(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x08101093
 
     # expected output from the model
@@ -2159,9 +2159,9 @@ def run_test_UNSHFLI_56(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x08105093
 
     # expected output from the model
@@ -2200,9 +2200,9 @@ def run_test_GORCI_57(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x28005093
 
     # expected output from the model
@@ -2241,9 +2241,9 @@ def run_test_GREVI_58(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x68005093
 
     # expected output from the model
@@ -2281,9 +2281,9 @@ def run_test_FSRI_59(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 =random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x44105093
 
     # expected output from the model
@@ -2322,9 +2322,9 @@ def run_test_BFP_60(dut):
 
     ######### CTB : Modify the test to expose the bug #############
     # input transaction
-    mav_putvalue_src1 = 0x1B08C22B
-    mav_putvalue_src2 = 0x1C52F6C1
-    mav_putvalue_src3 = 0x1A7762F1
+    mav_putvalue_src1 = random.randint(0,4294967295)
+    mav_putvalue_src2 = random.randint(0,4294967295)
+    mav_putvalue_src3 = random.randint(0,4294967295)
     mav_putvalue_instr = 0x481070B3
 
     # expected output from the model
@@ -2348,4 +2348,3 @@ def run_test_BFP_60(dut):
     # comparison
     error_message = f'Value mismatch DUT = {hex(dut_output)} does not match MODEL = {hex(expected_mav_putvalue)}'
     assert dut_output == expected_mav_putvalue, error_message  
-
