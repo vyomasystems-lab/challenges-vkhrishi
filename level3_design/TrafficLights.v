@@ -1,26 +1,32 @@
-module Traffic_Light_Controller(
-
-
-    input clk,rst,[3:0]count,
-    output reg [2:0]light_M1,
-    output reg [2:0]light_S,
-    output reg [2:0]light_MT,
-    output reg [2:0]light_M2
-    );
+module TrafficLights(light_M1,light_M2,light_MT,light_S,rst,clk,NO_of_vehical);
     
+    
+    input [4:0]NO_of_vehical;
+    input rst;
+    input clk;
+    
+    output [2:0] light_M1;
+    reg [2:0] light_M1;
+    output [2:0] light_M2;
+    reg [2:0] light_M2;
+    output [2:0] light_MT; 
+    reg [2:0] light_MT;
+    output [2:0] light_S;
+    reg [2:0] light_S;
+
     parameter  S1=0, S2=1, S3 =2, S4=3, S5=4,S6=5;
-    reg [3:0]count;
+    reg[3:0] count;
     reg[2:0] ps;
-    parameter  sec7=7,sec5=5,sec2=2,sec3=3;
+    
 
    
     
-    always@(posedge clk or posedge rst or count)
+    always@( NO_of_vehical)
         begin
         if(rst==1)
         begin
-        ps<=S1;
-        count<=0;
+        ps<=S2;
+        
         end
         else
         
@@ -28,71 +34,71 @@ module Traffic_Light_Controller(
        
             
             case(ps)
-                S1: if(count<sec7)
+                S1: if(NO_of_vehical== 7)
                         begin
                         ps<=S1;
-                        count<=count+1;
+                        
                         end
                     else
                         begin
                         ps<=S2;
-                        count<=0;
+                        
                         end
-                S2: if(count<sec2)
+                S2: if(NO_of_vehical== 2)
                         begin
                         ps<=S2;
-                        count<=count+1;
+                        
                         end
 
                     else
                         begin
                         ps<=S3;
-                        count<=0;
+                       
                         end
-                S3: if(count<sec5)
+                S3: if(NO_of_vehical== 5)
                         begin
                         ps<=S3;
-                        count<=count+1;
+                        
                         end
 
                     else
                         begin
                         ps<=S4;
-                        count<=0;
+                        
                         end
-                S4:if(count<sec2)
+                S4:if(NO_of_vehical== 4)
                         begin
                         ps<=S4;
-                        count<=count+1;
+                        
                         end
 
                     else
                         begin
                         ps<=S5;
-                        count<=0;
+                        
                         end
-                S5:if(count<sec3)
+                S5:if(NO_of_vehical== 3)
                         begin
                         ps<=S5;
-                        count<=count+1;
+                        
                         end
 
                     else
                         begin
                         ps<=S6;
-                        count<=0;
+                        
                         end
 
-                S6:if(count<sec2)
+                S6:if(NO_of_vehical== 6)
                         begin
                         ps<=S6;
-                        count<=count+1;
+                        
                         end
 
                     else
                         begin
                         ps<=S1;
-                        count<=0;
+                        
                         end
                 default: ps<=S1;
                 endcase

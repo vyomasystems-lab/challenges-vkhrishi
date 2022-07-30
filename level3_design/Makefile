@@ -4,10 +4,10 @@ TOPLEVEL_LANG ?= verilog
 
 PWD=$(shell pwd)
 
-VERILOG_SOURCES = $(PWD)/Traffic_Light_controller.v              # provide your design path
+VERILOG_SOURCES = $(PWD)/TrafficLights.v              # provide your design path
 
-TOPLEVEL := Traffic_Light_controller   # design file
-MODULE   := test_traffic_light    # test file
+TOPLEVEL := TrafficLights   # design file
+MODULE   := test    # test file
 
 include $(shell cocotb-config --makefiles)/Makefile.sim
 
