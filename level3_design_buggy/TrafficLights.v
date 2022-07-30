@@ -112,7 +112,7 @@ module TrafficLights(light_M1,light_M2,light_MT,light_S,rst,clk,NO_of_vehical);
                     S1:
                     begin
                        light_M1<=3'b001;
-                       light_M2<=3'b001;
+                       light_M2<=3'b101;
                        light_MT<=3'b100;
                        light_S<=3'b100;
                     end
@@ -120,7 +120,7 @@ module TrafficLights(light_M1,light_M2,light_MT,light_S,rst,clk,NO_of_vehical);
                     begin 
                        light_M1<=3'b001;
                        light_M2<=3'b010;
-                       light_MT<=3'b100;
+                       light_MT<=3'b111;
                        light_S<=3'b100;
                     end
                     S3:
@@ -128,11 +128,11 @@ module TrafficLights(light_M1,light_M2,light_MT,light_S,rst,clk,NO_of_vehical);
                        light_M1<=3'b001;
                        light_M2<=3'b100;
                        light_MT<=3'b001;
-                       light_S<=3'b100;
+                       light_S<=3'b000;
                     end
                     S4:
                     begin
-                       light_M1<=3'b010;
+                       light_M1<=3'b000;
                        light_M2<=3'b100;
                        light_MT<=3'b010;
                        light_S<=3'b100;
@@ -140,7 +140,7 @@ module TrafficLights(light_M1,light_M2,light_MT,light_S,rst,clk,NO_of_vehical);
                     S5:
                     begin
                        light_M1<=3'b100;
-                       light_M2<=3'b100;
+                       light_M2<=3'b010;
                        light_MT<=3'b100;
                        light_S<=3'b001;
                     end
@@ -148,7 +148,7 @@ module TrafficLights(light_M1,light_M2,light_MT,light_S,rst,clk,NO_of_vehical);
                     begin 
                        light_M1<=3'b100;
                        light_M2<=3'b100;
-                       light_MT<=3'b100;
+                       light_MT<=3'b000;
                        light_S<=3'b010;
                     end
                     default:
