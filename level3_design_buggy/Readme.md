@@ -333,57 +333,6 @@ Based on the above test input and analysing the design, we see the following
 
 
 
-
-
-S1:
-                    begin
-                       light_M1<=3'b001;
-                       light_M2<=3'b001;
-                       light_MT<=3'b100;
-                       light_S<=3'b100;
-                    end
-                    S2:
-                    begin 
-                       light_M1<=3'b001;
-                       light_M2<=3'b010;
-                       light_MT<=3'b100;
-                       light_S<=3'b100;
-                    end
-                    S3:
-                    begin
-                       light_M1<=3'b001;
-                       light_M2<=3'b100;
-                       light_MT<=3'b001;
-                       light_S<=3'b100;
-                    end
-                    S4:
-                    begin
-                       light_M1<=3'b010;
-                       light_M2<=3'b100;
-                       light_MT<=3'b010;
-                       light_S<=3'b100;
-                    end
-                    S5:
-                    begin
-                       light_M1<=3'b100;
-                       light_M2<=3'b100;
-                       light_MT<=3'b100;
-                       light_S<=3'b001;
-                    end
-                    S6:
-                    begin 
-                       light_M1<=3'b100;
-                       light_M2<=3'b100;
-                       light_MT<=3'b100;
-                       light_S<=3'b010;
-                    end
-                    default:
-                    begin 
-                       light_M1<=3'b000;
-                       light_M2<=3'b000;
-                       light_MT<=3'b000;
-                       light_S<=3'b000;
-                    end
 ```
 For the Traffic Light Controller design, the logic at S1 should be ```light_M2<=3'b001; ```instead of ```light_M2<=3'b101; ```as in the design code.
 The logic at S2 should be ``` light_MT<=3'b100; ``` instead of ```light_MT<=3'b111; ``` as in the design code.
