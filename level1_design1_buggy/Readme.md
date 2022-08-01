@@ -1,4 +1,4 @@
-# Multiplexer Design Verification
+# 31x1 Multiplexer Design Verification
 
 The verification environment is setup using Vyoma's UpTickPro provided for the hackathon.
 
