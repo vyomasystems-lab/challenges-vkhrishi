@@ -192,3 +192,10 @@ Updating the design and re-running the test makes the test pass.
 
 The updated design is checked in level1_design2_fix
 
+
+## Verification Strategy
+Since the design was simple . So first I read verilog code . I found error in select line 12 and select line 30 was missing . After this is was easy to find the bugs using python testbench code.
+
+## Is the verification complete ?
+Yes the verification has completed . Just we have to change the select line (dut.sel.value) value to verify all 31 outcomes of 31 x 1 Multiplexer. In this verification
+it gives false output to sel=12,sel=13,sel=30.
