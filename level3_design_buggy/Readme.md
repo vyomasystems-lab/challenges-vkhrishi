@@ -347,3 +347,12 @@ Updating the design and re-running the test makes the test pass.
 ![9](https://user-images.githubusercontent.com/59868949/182024550-ad854f3a-a20d-4cde-be2f-dddf9fa0bdd2.png)
 
 The updated design is checked in level3_design_original
+
+
+
+
+## Verification Strategy
+Since Traffic Light Controller was having only two outputs reset and clock so I introduced one more input which is number of vehicles. Based on input of number of vehicles the four lights(light_M1,light_M2,light_MT and light_S) change their colours. After introducing one more input it was easy to write the testbench code and find out the bugs in the design.
+
+## Is the verification complete ?
+Yes the verification has completed . Checked for all the required inputs and for all six states which are verified in this design. I tried inserting bug in all the states to check whether the testbench is capable of finding bugs in all the required states. 
