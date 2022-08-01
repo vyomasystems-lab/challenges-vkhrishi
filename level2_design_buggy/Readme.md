@@ -75,3 +75,11 @@ Updating the design and re-running the test makes the test pass.
 
 
 The updated design is checked in level2_design_fix
+
+
+## Verification Strategy
+First I read python model file which is having 58 different instruction . So I thought of checking bug in them . Giving random 32bit hex numbers to scr1,scr2,scr3
+and 32 bit instruction (Total 58 instruction). Converted all the binary numbers to hex numbers to make it easy to read and write.
+
+## Is the verification complete ?
+I tried testing all 58 instruction by writing testbench code in python . Finally I found bug in ANDN instruction and also tried fixing the bug . 
